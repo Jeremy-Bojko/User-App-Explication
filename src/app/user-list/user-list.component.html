@@ -1,0 +1,9 @@
+
+<a *ngFor="let userData of mesDataUser" [routerLink]="['/detail', userData.login.uuid]">
+  <img src="{{ userData.picture.thumbnail}}" alt="{{userData.name.first}}'s picture">
+  <span title="{{userData.name.first}}">{{ userData.name.first}} </span>
+  <span>{{ userData.name.last}}</span>
+  <div>
+    {{ userData.email }}
+  </div>
+</a>
